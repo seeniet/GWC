@@ -30,7 +30,19 @@ q1a1.addEventListener("click", result1);
 
 //#TODO: Define quiz functions here
 function result1(){
-  
-  
-  
+  questionCount=questionCount+ 1;
+  elenaCount=elenaCount+ 1;
+  damonScore=damonScore+ 1;
+}
+function result2(){
+  questionCount=questionCount+ 1;
+  elenaCount=elenaCount+ 1;
+  damonScore=damonScore+ 1;
+
+}
+function result3(){
+  questionCount= questionCount+1;
+  elenaCount= elenaCount+1;
+  damonScore= damonScore+1;
+  stefenScore= stefenScore+1;
 }

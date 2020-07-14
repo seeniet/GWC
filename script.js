@@ -34,10 +34,10 @@ var q3a4 = document.getElementById("q3a4");
 
 
 //#TODO: Add Event Listeners to your answer choice variables.
-q1a1.addEventListener("click", result1);
-q1a2.addEventListener("click", result1);
-q1a3.addEventListener("click", result1);
-q1a4.addEventListener("click", result1);
+q1a1.addEventListener("click", house);
+q1a2.addEventListener("click", location);
+q1a3.addEventListener("click", );
+q1a4.addEventListener("click", movie);
 
 q2a1.addEventListener("click", result1);
 q2a2.addEventListener("click", result1);
@@ -55,9 +55,12 @@ q3a4.addEventListener("click", result1);
 
 
 //#TODO: Define quiz functions here
-function result1(){
+function house(){
   questionCount=questionCount+ 1;
-  elenaCount=elenaCount+ 1;
+  house1Score+=1;
+  questionCount+=1;
+  alert ("a");
+  if (questionCount>)
   damonScore=damonScore+ 1;
 }
 function result2(){

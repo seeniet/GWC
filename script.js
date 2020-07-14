@@ -69,13 +69,25 @@ function house (){
 
 function location (){
   questionCount=questionCount+ 1;
-  
+  location2Score+=1;
+  questionCount+=1;
+  alert ("a");
+  if (questionCount>=3)
+    {
+      updateResult();
+    }
 
 }
   
 function movie (){
   questionCount= questionCount+1;
-  
+  movie3Score+=1;
+  questionCount+=1;
+  alert ("a");
+  if (questionCount>=3)
+    {
+      updateResult();
+    }
 }
 
 function updateResult()
@@ -83,13 +95,13 @@ function updateResult()
   if (house1Score>=2){
     result.innerHTML = "House";
   }
-else if(location2Score>=2){
+else if (location2Score>=2){
   result.innerHTML = "Location";
 }
-  else if (movie3Score>=2){
+else if (movie3Score>=2){
     result.innerHTML = "Movie";
   }
 else {
-  result.innerHTML = "Wow! This is your first life!";
+  result.innerHTML = "Wow! This is Your Partner!";
 }
 }

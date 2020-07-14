@@ -38,12 +38,12 @@ q1a1.addEventListener("click", edward);
 q1a2.addEventListener("click", jacob);
 
 
-q2a1.addEventListener("click", );
-q2a2.addEventListener("click", );
+q2a1.addEventListener("click", edward);
+q2a2.addEventListener("click", jacob);
 
 
-q3a1.addEventListener("click", );
-q3a2.addEventListener("click", );
+q3a1.addEventListener("click", edward);
+q3a2.addEventListener("click", jacob);
 
 
 
@@ -79,11 +79,11 @@ function jacob (){
 
 function updateResult()
 {
-  if (edward1Score>=2){
-    result.innerHTML = "House";
+  if (edward1Score>jacob2Score){
+    result.innerHTML = "Edward";
   }
-else if (jacob2Score>=2){
-  result.innerHTML = "Location";
+else if (jacob2Score>edward1Score){
+  result.innerHTML = "Jacob";
 }
 else {
   result.innerHTML = "Wow! This is Your Partner!";

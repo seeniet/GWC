@@ -61,21 +61,35 @@ function house (){
   questionCount+=1;
   alert ("a");
   if (questionCount>=3)
-  (
-  updateResult();
-  )
+  {
+        updateResult();        
+  }
+  
 }
 
 function location (){
   questionCount=questionCount+ 1;
-  elenaCount=elenaCount+ 1;
-  damonScore=damonScore+ 1;
+  
 
 }
   
 function movie (){
   questionCount= questionCount+1;
-  elenaCount= elenaCount+1;
-  damonScore= damonScore+1;
-  stefenScore= stefenScore+1;
+  
+}
+
+function updateResult()
+{
+  if (house1Score>=2){
+    result.innerHTML = "House";
+  }
+else if(location2Score>=2){
+  result.innerHTML = "Location";
+}
+  else if (movie3Score>=2){
+    result.innerHTML = "Movie";
+  }
+else {
+  result.innerHTML = "Wow! This is your first life!";
+}
 }

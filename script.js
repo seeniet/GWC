@@ -2,10 +2,9 @@
 //This is where you will define the variables you will be using in your project.
 //#TODO: Create four variables to track each possible quiz outcome
 var questionCount = 0;
-var edwardScore = 0;
-var bellaScore = 0;
-var jacobScore = 0;
-
+var house1Score = 0;
+var location2Score = 0;
+var movie3Score = 0;
 
 
 
@@ -36,7 +35,19 @@ var q3a4 = document.getElementById("q3a4");
 
 //#TODO: Add Event Listeners to your answer choice variables.
 q1a1.addEventListener("click", result1);
+q1a2.addEventListener("click", result1);
+q1a3.addEventListener("click", result1);
+q1a4.addEventListener("click", result1);
 
+q2a1.addEventListener("click", result1);
+q2a2.addEventListener("click", result1);
+q2a3.addEventListener("click", result1);
+q2a4.addEventListener("click", result1);
+
+q3a1.addEventListener("click", result1);
+q3a2.addEventListener("click", result1);
+q3a3.addEventListener("click", result1);
+q3a4.addEventListener("click", result1);
 
 
 

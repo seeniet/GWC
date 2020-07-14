@@ -86,6 +86,6 @@ else if (jacob2Score>edward1Score){
   result.innerHTML = "Jacob";
 }
 else {
-  result.innerHTML = "Wow! This is Your Partner!";
+  result.innerHTML = "";
 }
 }

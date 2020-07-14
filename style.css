@@ -9,11 +9,12 @@ body {
 
 h1 {
   font-style: oblique;
-  color: #0066cc;
+  color: #00cc00;
 }
 
 h2 {
   margin-top: 2em; 
+  color: #00cc00;
 }
 
 .question {

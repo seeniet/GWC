@@ -36,18 +36,18 @@ var q3a4 = document.getElementById("q3a4");
 //#TODO: Add Event Listeners to your answer choice variables.
 q1a1.addEventListener("click", house);
 q1a2.addEventListener("click", location);
-q1a3.addEventListener("click", );
+q1a3.addEventListener("click", location);
 q1a4.addEventListener("click", movie);
 
-q2a1.addEventListener("click", result1);
-q2a2.addEventListener("click", result1);
-q2a3.addEventListener("click", result1);
-q2a4.addEventListener("click", result1);
+q2a1.addEventListener("click", movie);
+q2a2.addEventListener("click", movie);
+q2a3.addEventListener("click", location);
+q2a4.addEventListener("click", house);
 
-q3a1.addEventListener("click", result1);
-q3a2.addEventListener("click", result1);
-q3a3.addEventListener("click", result1);
-q3a4.addEventListener("click", result1);
+q3a1.addEventListener("click", location);
+q3a2.addEventListener("click", house);
+q3a3.addEventListener("click", movie);
+q3a4.addEventListener("click", movie);
 
 
 
@@ -55,21 +55,25 @@ q3a4.addEventListener("click", result1);
 
 
 //#TODO: Define quiz functions here
-function house(){
+function house (){
   questionCount=questionCount+ 1;
   house1Score+=1;
   questionCount+=1;
   alert ("a");
-  if (questionCount>)
-  damonScore=damonScore+ 1;
+  if (questionCount>=3)
+  (
+  updateResult();
+  )
 }
-function result2(){
+
+function location (){
   questionCount=questionCount+ 1;
   elenaCount=elenaCount+ 1;
   damonScore=damonScore+ 1;
 
 }
-function result3(){
+  
+function movie (){
   questionCount= questionCount+1;
   elenaCount= elenaCount+1;
   damonScore= damonScore+1;

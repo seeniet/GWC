@@ -2,9 +2,9 @@
 //This is where you will define the variables you will be using in your project.
 //#TODO: Create four variables to track each possible quiz outcome
 var questionCount = 0;
-var house1Score = 0;
-var location2Score = 0;
-var movie3Score = 0;
+var edward1Score = 0;
+var jacob2Score = 0;
+
 
 
 
@@ -34,20 +34,17 @@ var q3a4 = document.getElementById("q3a4");
 
 
 //#TODO: Add Event Listeners to your answer choice variables.
-q1a1.addEventListener("click", house);
-q1a2.addEventListener("click", location);
-q1a3.addEventListener("click", location);
-q1a4.addEventListener("click", movie);
+q1a1.addEventListener("click", edward);
+q1a2.addEventListener("click", jacob);
 
-q2a1.addEventListener("click", movie);
-q2a2.addEventListener("click", movie);
-q2a3.addEventListener("click", location);
-q2a4.addEventListener("click", house);
 
-q3a1.addEventListener("click", location);
-q3a2.addEventListener("click", house);
-q3a3.addEventListener("click", movie);
-q3a4.addEventListener("click", movie);
+q2a1.addEventListener("click", );
+q2a2.addEventListener("click", );
+
+
+q3a1.addEventListener("click", );
+q3a2.addEventListener("click", );
+
 
 
 
@@ -55,9 +52,9 @@ q3a4.addEventListener("click", movie);
 
 
 //#TODO: Define quiz functions here
-function house (){
+function edward (){
   questionCount=questionCount+ 1;
-  house1Score+=1;
+  edward1Score+=1;
   questionCount+=1;
   alert ("a");
   if (questionCount>=3)
@@ -67,9 +64,9 @@ function house (){
   
 }
 
-function location (){
+function jacob (){
   questionCount=questionCount+ 1;
-  location2Score+=1;
+  jacob2Score+=1;
   questionCount+=1;
   alert ("a");
   if (questionCount>=3)
@@ -79,28 +76,15 @@ function location (){
 
 }
   
-function movie (){
-  questionCount= questionCount+1;
-  movie3Score+=1;
-  questionCount+=1;
-  alert ("a");
-  if (questionCount>=3)
-    {
-      updateResult();
-    }
-}
 
 function updateResult()
 {
-  if (house1Score>=2){
+  if (edward1Score>=2){
     result.innerHTML = "House";
   }
-else if (location2Score>=2){
+else if (jacob2Score>=2){
   result.innerHTML = "Location";
 }
-else if (movie3Score>=2){
-    result.innerHTML = "Movie";
-  }
 else {
   result.innerHTML = "Wow! This is Your Partner!";
 }

@@ -1,27 +1,215 @@
-/* CSS files add styling rules to your content */
+/* 
 
-body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
-  background-color:lightblue;
-  background-image: url("https://cdn.glitch.com/33c1edf7-7383-4600-a6b3-eb9ec2b2dc30%2Fthumbnails%2FHi.jpg?1594689930999");
+This CSS file is contains the CSS rule sets for 
+    - index.html
+    - any universal elements that all pages use
+
+The CSS for the take-action.html is in take-action.css
+
+*/
+
+/************************************************/
+/************* UNIVERSAL ELEMENTS ***************/
+/************************************************/
+
+/* TODO: Customize your font properties and background color for all elements inside the <body> and <html> tags */
+body,
+html {
+  height: 100%;
+  font-size: 20px; /* Change the font size*/
+  font-family: "Roboto", sans-serif; /* Change the font */
+  line-height: 1.5em; /* Change the line height size*/
+  margin: 0em;
+  color: white; /* Change the font color*/
+  background-color: #757573; /* Change the background color */
+  box-sizing: border-box;
 }
 
 h1 {
-  font-style: oblique;
-  color: #00cc00;
+  letter-spacing: 5px;
+  font-size: 50px;
+  /*TODO: Change the font-family property to your linked font*/
+  font-family: "Roboto Mono", sans-serif;
+  color: #757573;
+  text-align: center;
 }
 
+/*TODO: Change the font-family property to your linked font*/
 h2 {
-  margin-top: 2em; 
-  color: #00cc00;
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-family: "Roboto Mono", sans-serif;
+  color: #757573;
+  text-align: center;
+  line-height: 1.3em;
 }
 
-.question {
-  display: flex;
-  margin-top: 2em;
+/*TODO: Change the color of a link when a person hovers over it*/
+p a {
+  color: #43d6b9ff;
+  text-decoration: none;
 }
+
+/************************************************/
+/*************** CSS FOR NAV BAR ****************/
+/************************************************/
+
+/* All of these TODOs are optional. You should change the styling based on your mockup */
+
+/* TODO (optional): Change the background color and/or border style */
+
+ul.nav-bar {
+  /* Styling for the <ul class="nav-bar"> element */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #43d6b9ff;
+  border-style: solid;
+  border-color: #0D38D3;
+}
+
+/* TODO (optional): Change the font size*/
+
+li.nav {
+  /* Styling for the <li class="nav"> element */
+  float: right;
+  font-size: 15px;
+}
+
+/* TODO (optional): Change the font color, decoration, and/or case */
+
+li.nav a {
+  /* Styling for the <a> elements in <li class="nav"> */
+  display: block;
+  color: #0D38D3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* TODO (optional): Change the background color and/or font color when the mouse hovers over an item */
+
+li.nav a:hover {
+  /* Styling for the <a> elements when the mouse is hovering in <li class="nav"> */
+  background-color: #0D38D3;
+  color: #43d6b9ff;
+}
+
+/************************************************/
+/*********** CSS FOR FLEXBOX HEADING ************/
+/************************************************/
+
+/* TODO: Review the CSS properties to the flexbox container for title and intro text */
+.flex-container {
+  display: flex; /* Set the flexbox display */
+  flex-direction: row; /* Configure the flex items to row */
+  flex-wrap: nowrap; /* Don’t wrap the flex items */
+  justify-content: center; /* Justify the flex items to the center */
+  align-items: center; /* Align the flex items to the center */
+
+  /* Design properties */
+  background-color: #0D38D3;
+  padding: 5px;
+
+  /* Positioning properties */
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 40%; /* Change this value to move the box up or down */
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+
+/* TODO: Review the CSS properties to the flex item for the heading (the left box) */
+.heading-home {
+  padding: 2%;
+  color: #43d6b9ff;
+  font-size: 50px;
+  letter-spacing: 10px;
+  line-height: 60px;
+  text-align: center;
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+
+/* TODO: Review the CSS properties to the flex item for the intro text (the right box) */
+.intro-text {
+  background-color: #43d6b9ff; /* Add your own background color */
+  padding: 4%;
+  margin: 3%;
+  color: #0D38D3; /* Add the color of your font */
+  font-size: 20px; /* Add your font size*/
+  letter-spacing: 2px; /* Adds space between letters */
+  line-height: 1.4em; /* Adds space between lines */
+  text-align: center;
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+
+/************************************************/
+/*************** PARALLAX SCROLL ****************/
+/************************************************/
+
+/*-----------TEXT SECTIONS-----------*/
+
+/* TODO (optional): Change the background color and/or text alignment */
+
+.text-section {
+  background-color: #0D38D3;
+  padding: 20px 45px;
+  margin: 35px;
+  text-align: center;
+}
+
+/*---------IMAGE STYLING + PARALLAX PROPERTY---------*/
+
+/* TODO: Add the CSS selector for each image to the collective image rule set */
+
+.main-message,
+.image-one {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #757573;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+
+  /* TODO: Add the property to create the parallax scrolling effect here */
   
-.answer-choice img {
-  height: 10em;
 }
+
+/* TODO: Replace the current image URL with your own. This is the top image on your homepage. */
+.main-message {
+  
+}
+
+/* TODO: Replace the current image URL with your own */
+.image-one {
+ 
+}
+
+/* TODO: Add a second background image. Make sure you add this class selector to the collective image rule set above */
+
+/* TODO: Add more background images by repeating the process above */
+
+/*-----------IMAGE ATTRIBUTIONS (if required)-----------*/
+.attributions {
+  font-size: 12px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/******************************************************/
+/***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
+/******************************************************/
+
+/* TODO: Add a breakpoint if the screen is 700px or less */
+
+
+/* TODO: Add additional breakpoints based on your website's design
